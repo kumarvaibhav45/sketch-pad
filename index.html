@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sketch Pad</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Virtual Etch A Sketch</h1>
+      <div class="container-inner">
+        <div class="controls">
+          <h1>customize grid</h1>
+          <div class="i-element">
+            <label for="grid-size">Select Grid Size:</label>
+            <select name="grid-size" id="size">
+              <option value="16">16x16</option>
+              <option value="32">32x32</option>
+              <option value="48">48x48</option>
+              <option value="64">64x64</option>
+            </select>
+          </div>
+          <div class="i-element">
+            <label for="show-hide">Hide Grid:</label>
+            <input type="checkbox" name="show-hide" id="show-hide" />
+          </div>
+          <div class="i-element">
+            <label for="color">Pick Color:</label>
+            <input type="color" name="color" id="color" />
+          </div>
+          <p>or</p>
+          <div class="i-element">
+            <label for="random">Go Random:</label>
+            <input type="checkbox" name="random" id="random" />
+          </div>
+          <button id="reset">Reset Grid</button>
+        </div>
+
+        <div class="grid" id="grid"></div>
+      </div>
+      <p>
+        <a href="http://" target="_blank" rel="noopener noreferrer">
+          <img src="./github.svg" alt="github" class="icon" />
+          created by kumar vaibhav</a
+        >
+      </p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
