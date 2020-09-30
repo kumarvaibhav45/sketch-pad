@@ -79,6 +79,7 @@ size.addEventListener('input', function (e) {
 colorInp.addEventListener(
   'change',
   function (e) {
+    let link = document.getElementById('git-link')
     color = e.target.value
   },
   false
